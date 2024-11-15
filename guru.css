@@ -1,0 +1,334 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #96AFF8,#034ED7); 
+    padding-right: auto;
+    padding-left: auto;
+    height: 100px;
+    width: 100%;
+}
+
+.navdiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 50px;
+  
+    
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+    
+
+}
+
+.navdiv ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 30px ;
+
+   
+}
+
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 55px;
+    text-decoration: none;
+  
+   
+}
+
+li a:hover{
+    text-decoration-line: underline;
+    color: #3b3b3b;
+    transition: 0.8s;
+}
+
+button{
+    background-color:rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: #268DEE;
+    border:none;
+    font-weight: 600;
+    width: 130px;
+    
+}
+
+
+
+button a {
+    text-decoration: #268DEE;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #070707;
+    transition: 0.8s;
+}
+
+button a:hover{
+    color: white;
+    transition: 0.8s;
+}
+
+
+
+
+.team-area {
+    background: white; /* Path ke gambar latar belakang */
+    background-size: cover; /* Agar gambar memenuhi seluruh area */
+    background-position: center; /* Posisikan gambar di tengah */
+    background-attachment: fixed; /* Membuat background tetap saat di-scroll */
+    padding: 50px 0; /* Menambahkan padding untuk memberi ruang di atas dan bawah */
+    color: white; /* Agar teks lebih terlihat di atas gambar */
+    
+}
+.team-area::before {
+    filter: blur(8px);
+    z-index: -1; /* Posisikan layer blur di belakang konten */
+    opacity: 0.7; /* Atur transparansi jika ingin lebih lembut */
+
+}
+
+button{
+    background-color:rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: #268DEE;
+    border:none;
+    font-weight: 600;
+    
+}
+
+button a {
+    text-decoration: #268DEE;
+    font-size: 18px;
+}
+
+
+.section-title-text-container{
+    align-items: center;
+padding-left: 150px;
+text-align: center;
+margin-top: 50px;
+color: #070707;
+}
+
+.section-title h2{
+    text-transform: uppercase;
+}
+.section-title{
+    margin: 3% 0;
+}
+.section-title P{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Mengatur .row untuk menggunakan flexbox */
+.row {
+    display: flex;
+    justify-content: space-between; /* Membuat item berjarak merata di satu baris */
+    flex-wrap: wrap; /* Membuat elemen tetap responsif pada layar kecil */
+    gap: 20px; /* Menambahkan jarak antar item */
+}
+
+/* Setiap kotak team */
+.single-team {
+    flex: 1 1 calc(25% - 20px); /* Membuat setiap item mengambil 25% lebar dengan jarak antar item */
+    border: 1px solid #268DEE;
+    padding: 5px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(38, 141, 238, 0.1);
+    min-height: 350px; /* Tentukan tinggi minimum yang sama */
+    max-width: 250px; /* Maksimal lebar setiap kotak */
+}
+.single-team:hover {
+    transform: scale(1.1);
+}
+
+
+
+/* Membuat gambar bulat tetap proporsional dan terukur */
+.team-img img {
+    width: 100%;
+    max-width: 150px; /* Ukuran maksimal gambar */
+    height: 100%;
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    margin-bottom: 10px; /* Memberi ruang bawah agar tidak terlalu rapat */
+}
+
+.team-info {
+    margin-top: 15px;
+}
+
+.team-info h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.team-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.team-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+
+/* Untuk tampilan lebih responsif pada layar kecil */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center; /* Agar item saling menumpuk pada layar kecil */
+    }
+
+    .single-team {
+        flex: 1 1 100%; /* Agar pada layar kecil, setiap div menjadi full-width */
+        max-width: 500px; /* Maksimal lebar untuk layar kecil */
+    }
+}
+
+/* General Footer Styling */
+footer {
+    background-color: #f4f4f4; /* Light background color */
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-betwen;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows content to stack on smaller screens */
+}
+
+.footer-content {
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 30px; /* Adds spacing between sections */
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.footer-content p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    color: #268DEE; /* Blue color for links */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Quick Links Styling */
+.footer-content ul {
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Make the links stack vertically */
+    align-items: center; /* Center the list items */
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+}
+
+.footer-content ul li a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    color: #268DEE; /* Change color on hover */
+}
+
+/* Social Links Styling */
+.social-links {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.social-links li a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #268DEE; /* Blue color on hover */
+}
+
+/* Bottom Bar Styling */
+.bottom-bar {
+    background-color: #268DEE; /* Blue background */
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+
+}
+
+.bottom-bar p {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) 
+    .container {
+        flex-direction: column; /* Stack the footer sections vertically */
+        width: 90%; /* Adjust container width */
+    }
+
+    footer {
+        margin-top: 80px; /* Atur jarak antara team-area dan footer */
+        background-color: #f4f4f4; /* Contoh warna latar untuk footer */
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    

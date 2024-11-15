@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: white;
+    color: white;
+}
+
+
+.navbar {
+    background-image: linear-gradient(to right, #96AFF8,#034ED7); 
+    padding-right: auto;
+    padding-left: auto;
+    height: 100px;
+    width: 100%;
+}
+
+.navdiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 50px;
+  
+    
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+    
+
+}
+
+.navdiv ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 30px ;
+
+   
+}
+
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 55px;
+    text-decoration: none;
+  
+   
+}
+
+li a:hover{
+    text-decoration-line: underline;
+    color: #3b3b3b;
+    transition: 0.8s;
+}
+
+button{
+    background-color:rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: #268DEE;
+    border:none;
+    font-weight: 600;
+    width: 130px;
+    
+}
+
+
+
+button a {
+    text-decoration: #268DEE;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #070707;
+    transition: 0.8s;
+}
+
+button a:hover{
+    color: white;
+    transition: 0.8s;
+}
+
+.imgfon {
+    width: 100%;
+    overflow: hidden; 
+    text-align: center; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 500px;
+}
+
+video.skensa {
+    pointer-events: none; 
+}
+
+.skensa {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    filter: brightness(50%);
+    
+    
+}
+
+
+.imgfon h1{
+    position: absolute;
+    top:300px; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(255, 247, 247); 
+    font-size: 50px;
+  
+    font-weight: bold;
+}
+
+.imgfon h2{
+    position: absolute;
+    top: 350px;
+   
+    color: white;
+    left: 100px;
+    right: 100px;
+    font-size: 30px;
+    font-weight: 700;
+
+}
+
+.countainer{
+
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    gap: 5rem;
+    padding-left: 30px;
+    margin-top: 150px;
+}
+
+.wrapper{
+    padding: 10px 10%;
+
+}
+
+.card-area{
+    display: flex;
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center;     /* Pusatkan secara vertikal */
+    gap: 2rem;               /* Jarak antar kartu */
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.card{
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px 10px  rgba(97, 96, 96, 0.5);
+    overflow: hidden;
+    height: 250px;
+    width: 250px;
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.overlay{
+    width: 100%;
+    height: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(transparent,#fcfbfb 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+    overflow: hidden;
+    color: black;
+}
+
+.overlay h3{
+    margin-top: 55%;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.overlay P{
+
+    font-weight: 700;
+}
+
+.overlay a{
+    margin-top: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #ffffff;
+    background: #3d3b3b;
+    border-radius: 10px;
+    text-align: center;
+    width: 110px;
+    height: 23px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.overlay a:hover{
+    background: #000000;
+    transform: scale(1.1);
+}
+
+.card:hover img{
+    transform: scale(1.2);
+}
+
+.card:hover .overlay{
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* General Footer Styling */
+footer {
+    background-color: #f4f4f4; /* Light background color */
+    padding-bottom: 30px;
+    margin-top: 250px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-betwen;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows content to stack on smaller screens */
+    margin-left: 100px;
+}
+
+.footer-content {
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 30px; /* Adds spacing between sections */
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.footer-content p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    color: #268DEE; /* Blue color for links */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Quick Links Styling */
+.footer-content ul {
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Make the links stack vertically */
+    align-items: center; /* Center the list items */
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+}
+
+.footer-content ul li a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    color: #268DEE; /* Change color on hover */
+}
+
+/* Social Links Styling */
+.social-links {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.social-links li a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #268DEE; /* Blue color on hover */
+}
+
+/* Bottom Bar Styling */
+.bottom-bar {
+    padding: 0;
+    margin: 0;
+    background-color: #268DEE; /* Blue background */
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+
+}
+
+.bottom-bar p {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the footer sections vertically */
+        width: 90%; /* Adjust container width */
+    }
+
+    .footer-content {
+        width: 100%; /* Each section will take full width */
+        text-align: center; /* Center the content */
+    }
+
+    .footer-content p {
+        margin-bottom: 15px; /* Adjust margin for mobile */
+    }
+
+    .footer-content ul li a {
+        font-size: 18px; /* Larger font size for better readability */
+    }
+
+    .social-links li {
+        padding: 8px; /* Adjust padding for social icons */
+    }
+}

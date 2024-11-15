@@ -1,0 +1,407 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins' , sans-serif;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #96AFF8,#034ED7); 
+    padding-right: auto;
+    padding-left: auto;
+    height: 100px;
+    width: 100%;
+}
+
+.navdiv {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 7px;
+    padding-left: 30px;
+    padding-right: 50px;
+  
+    
+}
+
+.logo img{
+    width: 80px;
+    height: auto;
+    
+
+}
+
+.navdiv ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px 30px ;
+
+   
+}
+
+li a{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 55px;
+    text-decoration: none;
+  
+   
+}
+
+li a:hover{
+    text-decoration-line: underline;
+    color: #3b3b3b;
+    transition: 0.8s;
+}
+
+button{
+    background-color:rgb(255, 255, 255);
+    margin-left: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: #268DEE;
+    border:none;
+    font-weight: 600;
+    width: 130px;
+    
+}
+
+
+
+button a {
+    text-decoration: #268DEE;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #070707;
+    transition: 0.8s;
+}
+
+button a:hover{
+    color: white;
+    transition: 0.8s;
+}
+
+.imgfon {
+    width: 100%;
+    overflow: hidden; 
+    text-align: center; 
+    -webkit-user-select: none; /* Memblokir teks di-highlight */
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+video.skensa {
+    pointer-events: none; /* Mencegah interaksi pengguna */
+}
+
+.skensa {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    filter: brightness(50%);
+    
+    
+}
+
+
+.imgfon h1{
+    position: absolute;
+    top:350px; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(255, 247, 247); 
+    font-size: 90px;
+    text-align: center;
+}
+
+.imgfon h2{
+    position: absolute;
+    top: 440px;
+    text-align: center;
+    color: white;
+    left: 100px;
+    right: 100px;
+    font-size: 50px;
+}
+
+
+
+
+h3{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+
+
+.side-by-side-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 150px;
+    margin-left: 450px;
+}
+
+.left-container {
+    flex: 1;
+    padding-right: 50px;
+    margin-left: 30px;
+}
+
+.left-container img {
+    width: 460px;
+    border-radius: 10px;
+    border: 1px solid #000000;
+}
+
+.right-container {
+    flex: none;
+    padding-left: 50px;
+    border:solid 1px; 
+    border-radius: 50px;
+    height: 350px;
+    width: 700px;
+    overflow: hidden;
+    margin-right: 500px;
+}
+
+.right-container h2 {
+    margin-bottom: 10px;
+    margin-top: 70px;
+}
+
+.right-container p {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+h3{
+    margin-top: 90px;
+}
+
+.pljri {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px; /* Menambahkan jarak antar kolom */
+    margin-top: 100px;
+    margin-bottom: 150px;
+    width: 80%;
+    height: 80%;
+    padding-left: 140px;
+}
+
+.fot {
+    text-align: center; /* Membuat teks di bawah gambar terpusat */
+    flex: 1; /* Mengatur ukuran kolom agar seragam */
+}
+
+.fot img {
+    width: 100%; /* Membuat gambar sesuai dengan lebar kontainer fot */
+    height: 100%; /* Menjaga rasio gambar */
+    border-radius: 8px; /* Menambahkan sudut melengkung pada gambar */
+    object-fit: cover; /* Memastikan gambar menyesuaikan kontainer */
+    transition: transform 0.3s ease; /* Smooth transition pada efek hover */
+}
+
+.fot :hover{
+    transform: scale(1.05);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 0 20px;
+}
+
+.box {
+    width: 23%;
+    height: 400px;
+    overflow: hidden; /* Untuk memastikan gambar yang lebih besar tidak keluar dari kotak */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #eee;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menjaga proporsi gambar sesuai dengan ukuran kotak */
+    border-radius: 8px;
+}
+
+.box:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+/* General Footer Styling */
+footer {
+    background-color: #f4f4f4; /* Light background color */
+    padding-top: 50px;
+    
+}
+
+.container {
+    width: 1500px;
+    margin: auto;
+    display: flex;
+    justify-content: space-betwen;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows content to stack on smaller screens */
+}
+
+.footer-content {
+    width: 30%;
+    padding: 15px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.footer-content p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-content a {
+    color: #268DEE; /* Blue color for links */
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Quick Links Styling */
+.footer-content ul {
+    padding: 0;
+    text-align: center;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Make the links stack vertically */
+    align-items: center; /* Center the list items */
+}
+
+.footer-content ul li {
+    margin: 10px 0;
+}
+
+.footer-content ul li a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    color: #268DEE; /* Change color on hover */
+}
+
+/* Social Links Styling */
+.social-links {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+.social-links li a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+}
+
+.social-links li a:hover {
+    color: #268DEE; /* Blue color on hover */
+}
+
+/* Bottom Bar Styling */
+.bottom-bar {
+    background-color: #268DEE; /* Blue background */
+    text-align: center;
+    padding: 15px;
+    width: 98.3%;
+    margin-top: 30px;
+}
+
+.bottom-bar p {
+    color: #fff;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack the footer sections vertically */
+        width: 90%; /* Adjust container width */
+    }
+
+    .footer-content {
+        width: 100%; /* Each section will take full width */
+        text-align: center; /* Center the content */
+    }
+
+    .footer-content p {
+        margin-bottom: 15px; /* Adjust margin for mobile */
+    }
+
+    .footer-content ul li a {
+        font-size: 18px; /* Larger font size for better readability */
+    }
+
+    .social-links li {
+        padding: 8px; /* Adjust padding for social icons */
+    }
+}
